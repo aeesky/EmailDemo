@@ -2,3 +2,9 @@
 bin
 obj
 /EmailDemo/Scripts
+/EmailDemo/obj
+/EmailDemo/bin
+*.suo
+
+obj
+bin
