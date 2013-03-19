@@ -1,0 +1,21 @@
+C:\Users\lin_bb\Documents\Visual Studio 2010\Projects\EmailDemo\EmailDemo\bin\Debug\EmailDemo.exe.config
+C:\Users\lin_bb\Documents\Visual Studio 2010\Projects\EmailDemo\EmailDemo\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\lin_bb\Documents\Visual Studio 2010\Projects\EmailDemo\EmailDemo\obj\x86\Debug\EmailDemo.Form1.resources
+C:\Users\lin_bb\Documents\Visual Studio 2010\Projects\EmailDemo\EmailDemo\obj\x86\Debug\EmailDemo.Properties.Resources.resources
+C:\Users\lin_bb\Documents\Visual Studio 2010\Projects\EmailDemo\EmailDemo\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\lin_bb\Documents\Visual Studio 2010\Projects\EmailDemo\EmailDemo\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\lin_bb\Documents\Visual Studio 2010\Projects\EmailDemo\EmailDemo\bin\Debug\EmailDemo.exe
+C:\Users\lin_bb\Documents\Visual Studio 2010\Projects\EmailDemo\EmailDemo\bin\Debug\EmailDemo.pdb
+C:\Users\lin_bb\Documents\Visual Studio 2010\Projects\EmailDemo\EmailDemo\obj\x86\Debug\EmailDemo.exe
+C:\Users\lin_bb\Documents\Visual Studio 2010\Projects\EmailDemo\EmailDemo\obj\x86\Debug\EmailDemo.pdb
+E:\CodeZone\EmailDemo\EmailDemo\bin\Debug\EmailDemo.exe.config
+E:\CodeZone\EmailDemo\EmailDemo\obj\x86\Debug\EmailDemo.exe
+E:\CodeZone\EmailDemo\EmailDemo\obj\x86\Debug\EmailDemo.pdb
+E:\CodeZone\EmailDemo\EmailDemo\bin\Debug\EmailDemo.exe
+E:\CodeZone\EmailDemo\EmailDemo\bin\Debug\EmailDemo.pdb
+E:\CodeZone\EmailDemo\EmailDemo\obj\x86\Debug\EmailDemo.Form1.resources
+E:\CodeZone\EmailDemo\EmailDemo\obj\x86\Debug\EmailDemo.Properties.Resources.resources
+E:\CodeZone\EmailDemo\EmailDemo\obj\x86\Debug\EmailDemo.csproj.GenerateResource.Cache
+E:\CodeZone\EmailDemo\EmailDemo\obj\x86\Debug\EmailDemo.csprojResolveAssemblyReference.cache
+E:\CodeZone\EmailDemo\EmailDemo\bin\Debug\log4net.dll
+E:\CodeZone\EmailDemo\EmailDemo\bin\Debug\WHC.OrderWater.Commons.xml
