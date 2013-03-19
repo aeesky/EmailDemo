@@ -18,7 +18,7 @@ namespace EmailDemo
            email.Body = string.Format("测试邮件正文内容");
            email.IsHtml = false;
            email.From = "ec_hdaq@ecidi.com";
-           email.FromName = "ec_hdaq@ecidi.com";
+           email.FromName = "经营生产管理系统邮件提醒";
            email.AddRecipient("lin_bb@ecidi.com");
            try
            {
