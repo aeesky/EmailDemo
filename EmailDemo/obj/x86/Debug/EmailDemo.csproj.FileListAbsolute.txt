@@ -17,5 +17,3 @@ E:\CodeZone\EmailDemo\EmailDemo\obj\x86\Debug\EmailDemo.Form1.resources
 E:\CodeZone\EmailDemo\EmailDemo\obj\x86\Debug\EmailDemo.Properties.Resources.resources
 E:\CodeZone\EmailDemo\EmailDemo\obj\x86\Debug\EmailDemo.csproj.GenerateResource.Cache
 E:\CodeZone\EmailDemo\EmailDemo\obj\x86\Debug\EmailDemo.csprojResolveAssemblyReference.cache
-E:\CodeZone\EmailDemo\EmailDemo\bin\Debug\log4net.dll
-E:\CodeZone\EmailDemo\EmailDemo\bin\Debug\WHC.OrderWater.Commons.xml
