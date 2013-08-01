@@ -1,5 +1,5 @@
 # git ignore file
-bin
+bin2
 obj1
 /EmailDemo/Scripts
 /EmailDemo/obj
