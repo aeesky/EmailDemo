@@ -1,10 +1,7 @@
 # git ignore file
 bin
-obj
+obj1
 /EmailDemo/Scripts
 /EmailDemo/obj
 /EmailDemo/bin
 *.suo
-
-obj
-bin
