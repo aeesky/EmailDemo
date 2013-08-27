@@ -17,6 +17,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Net.Configuration;
 using System.ComponentModel;
+using System.Reflection;
 
 namespace EmailDemo
 {
@@ -28,15 +29,16 @@ namespace EmailDemo
         {
             try
             {
-                SmtpClient smtp = new SmtpClient("smtp.ecidi.com",25);
+                SmtpClient smtp = new SmtpClient("smtp.ecidi.com");
                 Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
                 MailSettingsSectionGroup settings = (MailSettingsSectionGroup)config.GetSectionGroup("system.net/mailSettings");
-                smtp.Host = settings.Smtp.Network.Host;
-                smtp.Port = settings.Smtp.Network.Port;
+                //smtp.Host = settings.Smtp.Network.Host;
+                //smtp.Port = settings.Smtp.Network.Port;
+                smtp.UseDefaultCredentials = settings.Smtp.Network.DefaultCredentials;
                 smtp.Credentials = new System.Net.NetworkCredential(settings.Smtp.Network.UserName,
                                                                     settings.Smtp.Network.Password);
                 smtp.EnableSsl = settings.Smtp.Network.EnableSsl;
-                smtp.UseDefaultCredentials = settings.Smtp.Network.DefaultCredentials;
+               
                 smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
                 return smtp;
             }
@@ -46,13 +48,6 @@ namespace EmailDemo
                 //throw;
             }
             return null;
-            //邮箱配置改用AppSettings保存
-            //smtp.Host = ConfigurationManager.AppSettings["host"];
-            //smtp.Port = Convert.ToInt16(ConfigurationManager.AppSettings["port"]); 
-            //smtp.Credentials = new System.Net.NetworkCredential(ConfigurationManager.AppSettings["userName"], ConfigurationManager.AppSettings["password"]);
-            //smtp.EnableSsl =ConfigurationManager.AppSettings["enableSsl"]=="true";
-            //smtp.UseDefaultCredentials = ConfigurationManager.AppSettings["defaultCredentials"] == "true";
-            //smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
         }
 
         /// <summary>
@@ -75,11 +70,13 @@ namespace EmailDemo
                 mMessage.To.Add(new MailAddress(to));
                 mMessage.Subject = title;
                 mMessage.Body = body;
-                using (SmtpClient mSmtpClient = CreateClient())
+                mMessage.IsBodyHtml = true;
+                mMessage.BodyEncoding = Encoding.UTF8;
+                SmtpClient mSmtpClient = CreateClient();
                 {
-                    mSmtpClient.Send(mMessage);
-                    //mSmtpClient.SendCompleted += new SendCompletedEventHandler(mSmtpClient_SendCompleted);
-                    //mSmtpClient.SendAsync(mMessage, DateTime.Now);
+                    //mSmtpClient.Send(mMessage);
+                    mSmtpClient.SendCompleted += new SendCompletedEventHandler(mSmtpClient_SendCompleted);
+                    mSmtpClient.SendAsync(mMessage, DateTime.Now);
                 }
             }
             catch (Exception e)
