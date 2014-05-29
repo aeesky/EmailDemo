@@ -13,13 +13,13 @@ namespace EmailDemo
        }
         public void MailTest()
        {
-           WHC.OrderWater.Commons.EmailHelper email = new WHC.OrderWater.Commons.EmailHelper("smtp.ecidi.com", "ec_hdaq@ecidi.com", "hdaq895623LINBB");
+           WHC.OrderWater.Commons.EmailHelper email = new WHC.OrderWater.Commons.EmailHelper("smtp.domain.com", "user@user.com", "passowrd");
            email.Subject = "普通测试邮件";
            email.Body = string.Format("测试邮件正文内容");
            email.IsHtml = false;
-           email.From = "ec_hdaq@ecidi.com";
-           email.FromName = "经营生产管理系统邮件提醒";
-           email.AddRecipient("lin_bb@ecidi.com");
+           email.From = "from@domain.com";
+           email.FromName = "邮件提醒";
+           email.AddRecipient("user2@domain.com");
            try
            {
                bool success = email.SendEmail();
